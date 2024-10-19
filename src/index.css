@@ -7,7 +7,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  background-color: #242424;
+  /* background-color: #242424; */
   color: #fff;
 }
 
@@ -20,4 +20,8 @@ body {
 .custom-shadow-input:focus {
   @apply outline-none border; 
   filter: drop-shadow(0 0 0.5em #11902caa);
+}
+
+#tasklist::-webkit-scrollbar {
+  display: none;
 }

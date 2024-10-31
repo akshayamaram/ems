@@ -24,10 +24,6 @@ const TaskList = ({data}) => {
           return <FailedTask key={i} data={item} />;
         }
       })}
-      {/* <AcceptTask/>
-      <NewTask/>
-      <CompletedTask/>
-      <FailedTask/> */}
     </div>
   )
 }

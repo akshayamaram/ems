@@ -52,13 +52,13 @@ const CreateTask = () => {
         onSubmit={(e) => {
           submitHandler(e);
         }}
-        className="flex w-full items-start justify-between mt-10 gap-20"
+        className="flex w-full items-start justify-between mt-5 gap-20"
       >
         <div className="w-1/2 flex flex-col gap-5">
           <div className="w-full">
             <h3 className="font-medium">Task Title</h3>
             <input
-              className="outline-none p-3 text-lg rounded-lg w-full border-2 border-blue-300 bg-transparent mt-3"
+              className="outline-none p-1.5 text-lg rounded-lg w-full border-2 border-blue-300 bg-transparent mt-3"
               type="text"
               placeholder="Make a UI design for Mobile... "
               value={title}
@@ -68,7 +68,7 @@ const CreateTask = () => {
           <div>
             <h3 className="font-medium">Date</h3>
             <input
-              className="outline-none p-3 text-lg rounded-lg w-full border-2 border-blue-300 bg-transparent mt-3"
+              className="outline-none p-1.5 text-lg rounded-lg w-full border-2 border-blue-300 bg-transparent mt-3"
               type="date"
               value={date}
               onChange={(e) => {setDate(e.target.value)}}
@@ -77,7 +77,7 @@ const CreateTask = () => {
           <div>
             <h3 className="font-medium">Assign To</h3>
             <input
-              className="outline-none p-3 text-lg rounded-lg w-full border-2 border-blue-300 bg-transparent mt-3"
+              className="outline-none p-1.5 text-lg rounded-lg w-full border-2 border-blue-300 bg-transparent mt-3"
               type="text"
               placeholder="Emplyoee name..."
               value={assignTo}
@@ -89,7 +89,7 @@ const CreateTask = () => {
           <div>
             <h3 className="font-medium">Category</h3>
             <input
-              className="outline-none p-3 text-lg rounded-lg w-full border-2 border-blue-300 bg-transparent mt-3"
+              className="outline-none p-1.5 text-lg rounded-lg w-full border-2 border-blue-300 bg-transparent mt-3"
               type="text"
               placeholder="Design, Development etc.."
               value={category}
@@ -99,7 +99,7 @@ const CreateTask = () => {
           <div className="w-full">
             <h3 className="font-medium">Description</h3>
             <textarea
-              className="outline-none p-3 text-lg rounded-lg w-full border-2 border-blue-300 bg-transparent mt-3"
+              className="outline-none p-2 text-lg rounded-lg w-full border-2 border-blue-300 bg-transparent mt-3"
               name=""
               id=""
               placeholder="Desired description of task (Max 500 words)"
@@ -107,7 +107,7 @@ const CreateTask = () => {
               onChange={(e) => {setDescription(e.target.value)}}
             ></textarea>
           </div>
-          <button className="bg-yellow-300 rounded-lg p-3 text-lg outline-none text-black custom-shadow-button font-medium mt-2">
+          <button className="bg-yellow-300 rounded-lg p-1.5 text-lg outline-none text-black custom-shadow-button font-medium mt-2">
             Create Task
           </button>
         </div>

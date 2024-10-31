@@ -7,7 +7,7 @@ const AllTaskWidget = () => {
   // console.log(userData);
 
   return (
-    <div className="bg-[#242424] mt-14 h-40 ">
+    <div className=" mt-8 h-40 ">
       <div className="py-2 px-4 bg-pink-400 rounded-lg flex items-center justify-between mb-2">
         <h2 className="w-1/5 text-[#242424] text-center font-medium">Employee Name</h2>
         <h3 className="w-1/5 text-[#242424] text-center font-medium">New Tasks</h3>
@@ -15,7 +15,7 @@ const AllTaskWidget = () => {
         <h5 className="w-1/5 text-[#242424] text-center font-medium">Completed Tasks</h5>
         <h5 className="w-1/5 text-[#242424] text-center font-medium">Failed Tasks</h5>
       </div>
-      <div className="h-[80%] overflow-auto">
+      <div className=" h-[78%] overflow-auto">
         {userData.map(function (item, index) {
           return (
             <div

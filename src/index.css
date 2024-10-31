@@ -40,3 +40,16 @@ body {
 #tasklist::-webkit-scrollbar {
   display: none;
 }
+
+.animate {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 2s cubic-bezier(0.4, 0, 0.2, 1); 
+
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}

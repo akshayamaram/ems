@@ -1,11 +1,10 @@
 import React, { useState } from "react";
 
-const Login = ({handleLogin}) => {
-
+const Login = ({ handleLogin }) => {
   // console.log({handleLogin})
 
-  const [email, setEmail] = useState('')
-  const [password, setPassword] = useState('')
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
 
   const submitHandler = (e) => {
     e.preventDefault();
@@ -13,10 +12,10 @@ const Login = ({handleLogin}) => {
     // console.log("email is :" , email)
     // console.log("password is :" , password)
 
-    handleLogin(email, password)
+    handleLogin(email, password);
 
-    setEmail('')
-    setPassword('')
+    setEmail("");
+    setPassword("");
   };
 
   return (
@@ -35,7 +34,7 @@ const Login = ({handleLogin}) => {
             placeholder="Enter your email... "
             value={email}
             onChange={(e) => {
-              setEmail(e.target.value)
+              setEmail(e.target.value);
               // console.log(e.target.value)
             }}
           />
@@ -46,13 +45,22 @@ const Login = ({handleLogin}) => {
             placeholder="Enter your password..."
             value={password}
             onChange={(e) => {
-              setPassword(e.target.value)
+              setPassword(e.target.value);
             }}
           />
           <button className="bg-green-600 rounded-md font-semibold custom-shadow-login px-7 py-2 outline-none mt-3 w-80">
             Log in
           </button>
         </form>
+
+        <div className="flex items-center absolute right-0 bottom-5 text-[#d3cccc]">
+          <span className="text-7xl -mt-5 text-[#3b3939]">{"{"}</span>
+          <span className="animate">
+            admin credentials : [admin@me.com] [123] <br />
+            employee credentials : [employee(1-5)@example.com] [123]
+          </span>
+          <span className="text-7xl -mt-5 text-[#3b3939]">{"}"}</span>
+        </div>
       </div>
     </div>
   );
